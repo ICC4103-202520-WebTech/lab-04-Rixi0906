@@ -1,0 +1,9 @@
+<h1>Guests</h1>
+
+<ul>
+  <% @guests.each do |guest| %>
+    <li>
+      <%= link_to "#{guest.document_id}", guest_path(guest) %>
+    </li>
+  <% end %>
+</ul>
